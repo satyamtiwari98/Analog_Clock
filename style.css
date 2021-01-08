@@ -1,0 +1,82 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: #000;
+}
+
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+  
+}
+
+
+h1{
+    color: blueviolet;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.clockbox,
+#clock {
+    width: 60%;
+}
+
+
+.circle {
+    fill: none;
+    stroke: rgb(212, 15, 15);
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: rgb(54, 2, 2);
+}
+.hour-marks {
+    fill: none;
+    stroke: rgb(196, 4, 4);
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: rgb(9, 175, 134);
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: rgb(9, 175, 134);
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+
+.sizing-box {
+    fill: none;
+}
+
+
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
